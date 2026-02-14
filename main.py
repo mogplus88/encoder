@@ -5,7 +5,7 @@ uncomment to run mainRX
 # import mainRX
 print('main initiated')
 from machine import Pin, Timer
-led = Pin(23, Pin.OUT)
+led = Pin(2, Pin.OUT)
 def cb(t):
     led.toggle()
 
