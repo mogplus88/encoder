@@ -9,4 +9,4 @@ led = Pin(2, Pin.OUT)
 def cb(t):
     led.toggle()
 
-tim = Timer(0, freq=5, mode=Timer.PERIODIC, callback=cb)
+tim = Timer(0, freq=2, mode=Timer.PERIODIC, callback=cb)
