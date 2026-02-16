@@ -3,7 +3,7 @@ Run mainX
 uncomment to run mainRX
 '''
 # import mainRX
-print('main initiated')
+print('main initiated using wifi99')
 from machine import Pin, Timer
 led = Pin(2, Pin.OUT)
 def cb(t):
