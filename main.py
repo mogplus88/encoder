@@ -8,8 +8,9 @@ from machine import Pin, Timer
 led12 = Pin(12, Pin.OUT)
 led02 = Pin(2, Pin.OUT)
 led02.on()
+led12.off()
 def cb(t):
     led02.toggle()
     led12.toggle()
 
-tim = Timer(0, freq=10, mode=Timer.PERIODIC, callback=cb)
+tim = Timer(0, freq=1, mode=Timer.PERIODIC, callback=cb)
