@@ -11,4 +11,4 @@ def cb(t):
     led02.toggle()
     led12.toggle()
 
-tim = Timer(0, freq=10, mode=Timer.PERIODIC, callback=cb)
+tim = Timer(0, freq=1, mode=Timer.PERIODIC, callback=cb)
