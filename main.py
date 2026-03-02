@@ -5,6 +5,7 @@ uncomment to run mainRX
 # import mainRX
 print('main initiated')
 from machine import Pin, Timer
+from time import sleep
 led12 = Pin(12, Pin.OUT)
 led02 = Pin(2, Pin.OUT)
 led02.on()
@@ -14,3 +15,6 @@ def cb(t):
     led12.toggle()
 
 tim = Timer(0, freq=10, mode=Timer.PERIODIC, callback=cb)
+
+sleep(5)
+tim.deinit()
